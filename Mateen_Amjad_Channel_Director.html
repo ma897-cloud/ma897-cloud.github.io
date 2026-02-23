@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mateen Amjad | Channel Director</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#000;color:#A0A0A0;line-height:1.8;overflow-x:hidden}
+a{text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 64px;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nn{font-size:13px;font-weight:700;color:#E8E8E8;letter-spacing:3px;text-transform:uppercase}
+.nl{display:flex;gap:28px}
+.nl a{color:#606060;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:color .3s}
+.nl a:hover{color:#E8E8E8}
+.nc{font-size:11px;font-weight:600;color:#0C6;letter-spacing:2px;text-transform:uppercase;transition:opacity .3s}
+.nc:hover{opacity:.7}
+section{padding:120px 80px}
+.ey{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#0C6;margin-bottom:20px}
+h1{font-size:clamp(36px,5vw,56px);font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:#FFF;margin-bottom:16px}
+h2{font-size:clamp(28px,3.5vw,40px);font-weight:800;color:#FFF;letter-spacing:-1px;line-height:1.15;margin-bottom:16px}
+h3{font-size:18px;font-weight:700;color:#E8E8E8;margin-bottom:10px}
+h4{font-size:14px;font-weight:700;color:#0C6;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+p{font-size:15px;margin-bottom:16px;max-width:640px}
+.dv{width:48px;height:1px;background:#0C6;margin:48px 0}
+.df{width:100%;height:1px;background:rgba(255,255,255,.06);margin:64px 0}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:160px 80px 100px;position:relative}
+.hero::after{content:"";position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(270deg,rgba(0,204,102,.015),transparent);pointer-events:none}
+.hs{font-size:16px;color:#606060;margin-bottom:32px;max-width:640px;line-height:1.9}
+.hs strong{color:#E8E8E8;font-weight:600}
+.hc{display:flex;gap:32px;margin-bottom:44px;flex-wrap:wrap}
+.hc span{font-size:12px;color:#606060}
+.hc strong{color:#E8E8E8;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;border:1px solid #0C6;color:#0C6;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:all .3s}
+.btn:hover{background:#0C6;color:#000}
+.eg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px}
+.ec{background:#060606;border:1px solid rgba(255,255,255,.06);padding:36px 28px;border-top:2px solid #0C6;transition:all .3s}
+.ec:hover{background:#0C0C0C}
+.ec h3{font-size:16px;margin-bottom:6px}
+.er{font-size:12px;color:#0C6;font-weight:600;margin-bottom:12px}
+.ec p{font-size:13px;max-width:none}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.ac{background:#060606;border:1px solid rgba(255,255,255,.06);padding:40px}
+.ac h3{margin-bottom:16px}
+.ac ul{list-style:none;margin:16px 0}
+.ac li{padding:5px 0;font-size:13px;padding-left:16px;position:relative}
+.ac li::before{content:"\00B7";position:absolute;left:0;color:#0C6;font-weight:900;font-size:16px;line-height:1.5}
+.ac li strong{color:#E8E8E8;font-weight:600}
+.an2{font-size:13px;color:#606060;font-style:italic;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)}
+.pb{background:#060606;border:1px solid rgba(255,255,255,.06);padding:48px 56px;margin-bottom:32px}
+.pb p{max-width:580px}
+.bl{list-style:none;margin:16px 0}
+.bl li{padding:6px 0;font-size:14px;position:relative;padding-left:16px}
+.bl li::before{content:"\00B7";position:absolute;left:0;color:#0C6;font-weight:900;font-size:18px;line-height:1.4}
+.bl li strong{color:#E8E8E8;font-weight:600}
+.st{font-size:15px;color:#E8E8E8;font-weight:500;line-height:1.8}
+.em{font-size:14px;color:#0C6;font-weight:600}
+.sc{background:#060606;border:1px solid rgba(255,255,255,.06);padding:48px;margin-bottom:2px}
+.sc h3{font-size:20px;margin-bottom:6px}
+.ss{font-size:13px;color:#606060;margin-bottom:20px}
+.s2{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:20px}
+.s2 h4{font-size:12px;margin-bottom:10px}
+.s2 ul{list-style:none}
+.s2 li{padding:4px 0;font-size:13px;padding-left:16px;position:relative}
+.s2 li::before{content:"\00B7";position:absolute;left:0;color:#0C6;font-weight:900;font-size:16px;line-height:1.5}
+.sb{font-size:14px;color:#E8E8E8;font-weight:600;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)}
+.ts{background:#060606;border:1px solid rgba(255,255,255,.06);border-left:2px solid #0C6;padding:36px 40px;margin-bottom:16px;max-width:720px}
+.ts p{font-size:15px;color:#E8E8E8;line-height:1.8;font-style:italic;margin-bottom:12px;max-width:none}
+.at{font-size:12px;color:#0C6;font-weight:600}
+.rl{font-size:11px;color:#606060;margin-top:2px}
+.dt{width:100%;border-collapse:collapse;margin:32px 0;font-size:13px;max-width:920px}
+.dt th{text-align:left;padding:14px 18px;border:1px solid rgba(255,255,255,.06);background:#0C0C0C;color:#606060;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.dt td{padding:12px 18px;border:1px solid rgba(255,255,255,.06);background:#060606}
+.dt .me{background:rgba(0,204,102,.04);color:#0C6;font-weight:600}
+.dt .lb{color:#E8E8E8;font-weight:600}
+.tl{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px}
+.tc{background:#060606;border:1px solid rgba(255,255,255,.06);padding:36px 28px;border-top:2px solid #0C6}
+.tc h3{font-size:16px;margin-bottom:4px}
+.tt{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:11px;color:#FFD700;font-weight:700;letter-spacing:1px;margin-bottom:14px}
+.tc ul{list-style:none}
+.tc li{padding:4px 0;font-size:13px;padding-left:16px;position:relative}
+.tc li::before{content:"\00B7";position:absolute;left:0;color:#0C6;font-weight:900;font-size:16px;line-height:1.5}
+.qo{max-width:720px}
+.qi{margin-bottom:18px}
+.ql{font-size:13px;color:#E8E8E8;font-weight:600;margin-bottom:10px}
+.qp{display:flex;gap:4px}
+.qv{flex:1;padding:10px 8px;text-align:center;background:#060606;border:1px solid rgba(255,255,255,.06);cursor:pointer;font-size:12px;font-weight:600;color:#606060;transition:all .2s;user-select:none}
+.qv:hover{border-color:#0C6;color:#A0A0A0}
+.qv.sel{background:rgba(0,204,102,.06);border-color:#0C6;color:#0C6}
+.qv small{display:block;font-size:9px;font-weight:400;margin-top:2px}
+.qb{padding:14px 32px;background:transparent;border:1px solid #0C6;color:#0C6;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .3s;margin-top:8px}
+.qb:hover{background:#0C6;color:#000}
+#qr{display:none;margin-top:26px;padding:28px;border:1px solid rgba(255,255,255,.06);background:#060606}
+#qr .qs{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:48px;font-weight:800;color:#0C6;margin-bottom:8px}
+#qr h4{font-size:16px;color:#E8E8E8;font-weight:700;margin-bottom:8px}
+#qr p{font-size:14px;max-width:none}
+.cr{display:flex;gap:48px;flex-wrap:wrap}
+.ci{margin-bottom:16px}
+.ci b{font-size:14px;color:#E8E8E8}
+.ci span{display:block;font-size:12px;color:#606060;margin-top:2px}
+.ce{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.ce span{padding:5px 14px;border:1px solid rgba(255,255,255,.06);font-size:10px;font-weight:700;color:#606060;letter-spacing:1px;text-transform:uppercase}
+.cs{padding:120px 80px;border-top:1px solid rgba(255,255,255,.06)}
+.cs h2{margin-bottom:12px}
+.cs p{margin-bottom:32px}
+.sk{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;color:#FFD700;font-weight:600;letter-spacing:1px;margin-top:24px}
+.cg{display:flex;gap:48px;margin-top:40px;flex-wrap:wrap}
+.cg b{display:block;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#606060;margin-bottom:4px;font-weight:700}
+.cg .v{font-size:14px;font-weight:600;color:#E8E8E8}
+.cg .v a{color:#0C6}
+footer{padding:24px 80px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center}
+footer span{font-size:11px;color:#606060}
+.an{opacity:0;transform:translateY(16px);transition:all .6s ease}
+.an.v{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+nav{padding:14px 20px}.nl{display:none}
+.hero{padding:120px 24px 60px}
+section{padding:72px 24px}
+.ag,.s2,.eg,.tl{grid-template-columns:1fr}
+.hc{flex-direction:column;gap:12px}
+.cs{padding:72px 24px}
+.cg{flex-direction:column;gap:20px}
+.pb,.sc,.ac,.tc{padding:28px 24px}
+footer{flex-direction:column;gap:8px;padding:20px}
+.dt{font-size:11px}.dt th,.dt td{padding:8px 10px}
+.qp{flex-wrap:wrap}.qv{flex:1 1 calc(20% - 4px)}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="nn">Mateen Amjad</div>
+<div class="nl">
+<a href="#edge">Edge</a><a href="#build">What I Build</a><a href="#enablement">Enablement</a><a href="#proof">Proof</a><a href="#sectors">Focus</a><a href="#engagement">30/60/90</a><a href="#diagnostic">Diagnostic</a><a href="#contact">Contact</a>
+</div>
+<a href="#contact" class="nc">Start a Conversation &#8594;</a>
+</nav>
+
+<section class="hero">
+<div class="ey">Channel Director (US) &#183; Reseller / MSP / MSSP</div>
+<h1>I build partner channels that hit reseller revenue targets.</h1>
+<p class="hs">I develop the <strong>reseller partner profile + national strategy</strong>, recruit and enable partners, and run the <strong>governance operating system</strong> (scorecards, QBRs, deal reg, MDF ROI) that turns partner activity into forecastable pipeline and closed revenue. Built programs across <strong>18 countries, 40+ sites, and $7M+</strong> in partner initiatives with <strong>deep buyer-side experience</strong> (enterprise procurement) that improves co-sell outcomes.</p>
+<div class="hc">
+<span><strong>Former Enterprise Buyer</strong> PwC &#183; Meta &#183; Bank of America</span>
+<span><strong>Channel Builder</strong> Sun Microsystems &#183; Cisco &#183; IBM</span>
+<span><strong>Education</strong> Cornell MBA &#183; UC Berkeley CS &#183; MIT Sloan (AI)</span>
+</div>
+<a href="#contact" class="btn">Start a Conversation &#8594;</a>
+</section>
+
+<section id="edge">
+<div class="ey">Why I'm Different</div>
+<h2>I've been the buyer, the operator, and the channel builder.</h2>
+<p>Most channel leaders only know the vendor side. I've sat in the seat your partners sell into, so I build partner motions that match how enterprise deals actually get approved: <strong>champion, technical validation, security, procurement, legal, close.</strong></p>
+<div class="dv"></div>
+<div class="eg">
+<div class="ec an">
+<h3>The Enterprise Buyer</h3>
+<div class="er">PwC &#183; Meta &#183; Bank of America &#183; athenahealth</div>
+<p>12+ years evaluating vendors, running RFPs, negotiating SOWs, managing procurement. I know what makes a CIO say yes, what makes procurement push back, and what kills a deal at the 11th hour. When I enable partners, I teach them how enterprise buyers actually think and how security and legal reviews work.</p>
+</div>
+<div class="ec an">
+<h3>The Infrastructure Operator</h3>
+<div class="er">800+ devices &#183; 40+ sites &#183; $7M+ programs</div>
+<p>I've deployed the products your partners sell. Switches, routers, firewalls, servers, SAN, HCI, security tools. I've owned the SOWs, managed the vendors, built the scorecards. When I talk to partners about technical positioning, I'm not reading from a battlecard. I've lived it.</p>
+</div>
+<div class="ec an">
+<h3>The Channel Builder</h3>
+<div class="er">Sun Microsystems &#183; 18 countries &#183; Zero to pipeline</div>
+<p>I've built reseller networks from nothing. Partner profiling, recruitment, enablement, co-sell cadence, QBR governance, incentive design. Across MENA, US, and global markets. I don't just design channel programs. I build them and run them until they produce forecastable, partner-sourced revenue.</p>
+</div>
+</div>
+</section>
+
+<section id="build">
+<div class="ey">What I Build</div>
+<h2>The complete reseller channel engine.</h2>
+<div class="dv"></div>
+<div class="ag">
+<div class="ac an">
+<h3>Partner Profile + National Strategy</h3>
+<ul>
+<li><strong>IPP/ICP development</strong> with weighted scoring criteria</li>
+<li>Segmentation by partner type: reseller, MSP, MSSP</li>
+<li>Territory design, coverage mapping, and national targets</li>
+<li>Target list development with revenue potential sizing</li>
+<li>Distributor routing strategy (Ingram, TD SYNNEX, Arrow)</li>
+</ul>
+<div class="an2">Strategy without execution is a PDF. I build the target list and go recruit.</div>
+</div>
+<div class="ac an">
+<h3>Recruit, Onboard, Certify</h3>
+<ul>
+<li>Partner pitch and value proposition</li>
+<li><strong>30/60/90 onboarding</strong> with certification gates</li>
+<li>Enablement milestones tied to tier benefits and MDF access</li>
+<li>Certification plan: sales reps, SEs, delivery teams</li>
+<li>First co-sell plays launched within 60 days of signing</li>
+</ul>
+<div class="an2">Recruitment without activation is the #1 reason channel programs fail.</div>
+</div>
+<div class="ac an">
+<h3>Co-sell Motion + Field Alignment</h3>
+<ul>
+<li>Joint account planning with partners</li>
+<li>Rules of engagement between direct and indirect</li>
+<li>Field alignment with RSDs/VP Sales on territory and accounts</li>
+<li>Enterprise deal navigation: security, procurement, legal</li>
+<li>Pipeline management with shared targets and inspection</li>
+</ul>
+<div class="an2">I've been on the buy side of these conversations for 12 years. Partners close faster with me in the room.</div>
+</div>
+<div class="ac an">
+<h3>Marketing, Incentives + Performance Governance</h3>
+<ul>
+<li><strong>SPIFs</strong>, tier benefits, and recognition programs</li>
+<li><strong>MDF governance</strong> with allocation rules and ROI tracking</li>
+<li>Channel marketing collaboration for new motions and launches</li>
+<li>Partner scorecards (pipeline, revenue, win rate, certifications)</li>
+<li><strong>QBRs</strong> with structured agenda, remediation plans, and tier reviews</li>
+</ul>
+<div class="an2">Without governance, even great partners drift. Scorecards and QBRs are the difference between a program and a revenue engine.</div>
+</div>
+</div>
+</section>
+
+<section id="enablement">
+<div class="ey">Partner Enablement</div>
+<h2>I treat the partner program like a product.</h2>
+<div class="dv"></div>
+<div class="pb an">
+<p class="st">Partners get what they need to sell and renew:</p>
+<ul class="bl">
+<li><strong>Playbooks + talk tracks + battlecards</strong> tailored by buyer persona and vertical</li>
+<li><strong>Demo access + use cases + objection handling</strong> for reseller and MSP/MSSP sales teams</li>
+<li><strong>Training + certification paths</strong> with enforcement (no cert = no deal reg access)</li>
+<li><strong>Deal registration + conflict resolution SLA</strong> (24hr approval, 90-day protection)</li>
+<li><strong>Clear incentives: SPIFs, tier benefits, MDF rules</strong> that reward revenue, not registration</li>
+<li><strong>Product marketing collaboration</strong> for launch kits, new SKU motions, and campaign support</li>
+</ul>
+<p class="em" style="margin-top:18px">Enablement is not a portal login and a "good luck." It is an activation system with gates, tools, and measurable outcomes.</p>
+</div>
+<div class="sc an">
+<h3>Distributor + VAD Strategy</h3>
+<div class="ss">Routing, readiness, and accountability at distribution scale.</div>
+<div class="s2">
+<div><h4>Distribution routes I've worked with</h4><ul>
+<li>Global: Ingram Micro, TD SYNNEX, Arrow, Westcon-Comstor</li>
+<li>MENA: Redington, Mindware / StarLink, Logicom</li>
+<li>Security VAD: Exclusive Networks</li>
+<li>Regional: Aptec, Tech Access</li>
+</ul></div>
+<div><h4>What I build for distribution</h4><ul>
+<li>Routing rules and lead handoff SLAs</li>
+<li>Partner-ready SKU packaging and margin structure</li>
+<li>Enablement plans by partner type (reseller vs MSP vs MSSP)</li>
+<li>Distributor scorecards tied to sell-through (not sell-in)</li>
+</ul></div>
+</div>
+<div class="sb">Distribution is an operating model, not a logo list.</div>
+</div>
+</section>
+
+<section id="proof">
+<div class="ey">Proof</div>
+<h2>Two stories that show how I operate and govern to targets.</h2>
+<p>Case studies below demonstrate channel build-from-zero, partner governance, and buyer-side deal mechanics that improve win rates and forecast confidence.</p>
+<div class="dv"></div>
+<div class="ts an">
+<p>"Within 90 days we had QBR discipline, enforceable deal registration rules, and active partner pipeline that did not exist before."</p>
+<div class="at">VP of Sales</div>
+<div class="rl">Enterprise Infrastructure Vendor (anonymized per NDA)</div>
+</div>
+<div class="ts an">
+<p>"He understands procurement and engineering at a level most channel leaders don't. Our partners trusted him immediately because he spoke their language."</p>
+<div class="at">CIO</div>
+<div class="rl">Financial Services, Fortune 500 (anonymized per NDA)</div>
+</div>
+<div class="df"></div>
+<h4>Case 1: Reseller Channel Build from Zero (Sun Microsystems, MENA)</h4>
+<div class="pb an">
+<div class="s2">
+<div>
+<p class="st" style="font-size:13px">Mission:</p>
+<p style="font-size:13px">Build a strategic reseller network across 18 MENA countries. No partner playbook existed. No enablement materials. No QBR cadence. No co-sell motion. All revenue came from direct sales. Team of 20+ with no operating rhythm.</p>
+<p class="st" style="font-size:13px;margin-top:16px">What I did:</p>
+<p style="font-size:13px">Developed partner profile + recruitment plan with weighted scoring by country. Designed onboarding and certification program. Built enablement kits (sales + technical). Established co-sell plays with top-tier resellers. Launched scorecards, deal registration, and QBR cadence. Designed incentive structure tied to attainment.</p>
+</div>
+<div>
+<p class="st" style="font-size:13px">Outcome:</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">18</span>Countries with active, governed reseller operations</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">20+</span>Team members operating in weekly pipeline rhythm</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">Zero to governed</span>Scalable channel motion with enforceable governance (deal reg, performance tracking, enablement coverage)</p>
+<p style="font-size:12px;color:#606060;font-style:italic;margin-top:12px">Quantified results available upon request: partners activated, partner-sourced pipeline, win rate, revenue to target, cycle-time improvements.</p>
+</div>
+</div>
+</div>
+<h4>Case 2: Vendor Governance from the Buy Side (Bank of America)</h4>
+<div class="pb an">
+<div class="s2">
+<div>
+<p class="st" style="font-size:13px">Mission:</p>
+<p style="font-size:13px">Run governance that improves vendor performance and reduces deal friction across a $7M infrastructure program. Four vendors operating independently. No scorecards. No executive visibility. $400K+ in unnecessary annual support costs. Security and procurement alignment required across multiple stakeholder groups.</p>
+<p class="st" style="font-size:13px;margin-top:16px">What I did:</p>
+<p style="font-size:13px">Built performance scorecards for all four vendors. Designed vendor engagement model with milestone-based SOWs and SLAs. Established executive review cadence and KPI enforcement. Ran security and procurement alignment ensuring vendors meet standards and commitments. Negotiated vendor contracts down 15%.</p>
+</div>
+<div>
+<p class="st" style="font-size:13px">Outcome:</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">$1.2M+</span>Annual savings delivered</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">$300K+</span>Vendor SOW reduction through negotiation</p>
+<p style="font-size:13px"><span style="font-family:ui-monospace,monospace;font-size:24px;font-weight:800;color:#0C6;display:block;margin-bottom:4px">99.5%</span>Post-deployment uptime</p>
+<p style="font-size:13px;color:#606060;font-style:italic;margin-top:12px">Stronger forecastability and cleaner execution across complex stakeholder groups (security, legal, procurement). This is what it looks like from the buyer's chair. I teach partners how to navigate it.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sectors">
+<div class="ey">Where I Focus</div>
+<h2>SaaS, security, enterprise infrastructure, and the partner ecosystems that sell them.</h2>
+<div class="dv"></div>
+<div class="sc an">
+<h3>SaaS + Security</h3>
+<div class="ss">Where complex buying cycles (security review, legal, procurement) determine channel success.</div>
+<div class="s2">
+<div><h4>Domain experience</h4><ul>
+<li>EDR/XDR, SIEM, PAM, zero trust, identity governance</li>
+<li>Cloud security, compliance automation, vulnerability management</li>
+<li>SaaS platform enablement and partner-led deployment</li>
+<li>SOC2-aligned procurement environments</li>
+</ul></div>
+<div><h4>What I build for SaaS/security vendors</h4><ul>
+<li>Reseller + MSP/MSSP recruitment with security readiness gates</li>
+<li>Co-sell plays that navigate CISO, security, and procurement</li>
+<li>Deal registration with pricing protection and conflict resolution</li>
+<li>Partner scorecards and QBR governance</li>
+</ul></div>
+</div>
+<div class="sb">Security buyers are the hardest buyers in enterprise. I've been one.</div>
+</div>
+<div class="sc an">
+<h3>Reseller + MSP/MSSP Ecosystems</h3>
+<div class="ss">The partner types I recruit, enable, and govern.</div>
+<div class="s2">
+<div><h4>Partner types</h4><ul>
+<li>National and regional VARs/resellers</li>
+<li>Managed Service Providers (MSPs)</li>
+<li>Managed Security Service Providers (MSSPs)</li>
+<li>Systems integrators (SIs)</li>
+<li>Distributors and value-added distributors (VADs)</li>
+</ul></div>
+<div><h4>What I do with them</h4><ul>
+<li>Profile, score, recruit, and onboard</li>
+<li>Enable with sales kits, demo access, and certification</li>
+<li>Co-sell into their enterprise accounts</li>
+<li>Govern with scorecards, QBRs, and tier reviews</li>
+<li>Incent with SPIFs, MDF, and recognition programs</li>
+</ul></div>
+</div>
+<div class="sb">I build national partner networks. Not one-off relationships.</div>
+</div>
+<div class="sc an">
+<h3>Enterprise Infrastructure + Networking</h3>
+<div class="ss">Where I've deployed 800+ devices across 40+ sites.</div>
+<div class="s2">
+<div><h4>What I've deployed</h4><ul>
+<li>Switches, routers, SD-WAN, firewalls, wireless</li>
+<li>Rack/blade servers, SAN/NAS, HCI</li>
+<li>Backup, DR, replication</li>
+<li>UPS, PDUs, edge compute</li>
+</ul></div>
+<div><h4>What I build for infra vendors</h4><ul>
+<li>VAR and SI recruitment with technical readiness gates</li>
+<li>Distributor strategy (Ingram, TD SYNNEX, Arrow, regional)</li>
+<li>Partner enablement: sizing guides, reference architectures</li>
+<li>Co-sell plays into CIO/VP Infra buyers</li>
+</ul></div>
+</div>
+<div class="sb">I've deployed the products your partners sell. That's the difference.</div>
+</div>
+</section>
+
+<section>
+<div class="ey">Comparison</div>
+<h2>What makes this different from typical channel hires.</h2>
+<div class="dv"></div>
+<table class="dt">
+<tr><th></th><th>Typical Channel Manager</th><th>Big 4 Consultant</th><th>Sales Leader Pivoting</th><th class="me">Me</th></tr>
+<tr><td class="lb">Buyer experience</td><td>None (vendor-side only)</td><td>Consultant-side</td><td>Seller-side</td><td class="me">12 years as the enterprise buyer</td></tr>
+<tr><td class="lb">Technical depth</td><td>Product-level</td><td>Theoretical</td><td>Demo-level</td><td class="me">CS degree + 800+ device deployments</td></tr>
+<tr><td class="lb">Channel build</td><td>Inherited programs</td><td>Strategy decks</td><td>No channel experience</td><td class="me">Built from zero across 18 countries</td></tr>
+<tr><td class="lb">Co-sell ability</td><td>Partner management</td><td>Not in the room</td><td>Closes direct</td><td class="me">Joint selling into enterprise procurement</td></tr>
+<tr><td class="lb">MSP/MSSP</td><td>Some exposure</td><td>Theoretical</td><td>None</td><td class="me">National reseller + MSP/MSSP strategy</td></tr>
+<tr><td class="lb">Incentive design</td><td>Inherits existing</td><td>Recommends</td><td>Commission-focused</td><td class="me">SPIFs + MDF governance + channel marketing</td></tr>
+<tr><td class="lb">Product marketing</td><td>Receives kits</td><td>Not involved</td><td>Not involved</td><td class="me">Collaborates on new motions + launch kits</td></tr>
+<tr><td class="lb">Quota/targets</td><td>Manages partners</td><td>No quota</td><td>Direct quota only</td><td class="me">Quota attainment through partner-sourced revenue</td></tr>
+<tr><td class="lb">Governance</td><td>Basic QBRs</td><td>Recommends</td><td>Forecast-only</td><td class="me">Scorecards, deal reg, MDF ROI, tier reviews</td></tr>
+</table>
+</section>
+
+<section id="engagement">
+<div class="ey">Engagement</div>
+<h2>First 30/60/90 days.</h2>
+<div class="dv"></div>
+<div class="tl">
+<div class="tc an">
+<h3>Day 1 to 30</h3>
+<div class="tt">DIAGNOSE + ALIGN</div>
+<ul>
+<li>Develop partner profile and national target list</li>
+<li>Audit existing partner base and program gaps</li>
+<li>Field alignment with RSDs and VP Sales on territories and accounts</li>
+<li>Review deal reg, pricing, conflict policy</li>
+<li>Identify quick-win incentives (SPIFs, promo pricing)</li>
+<li>Stakeholder mapping: sales, product marketing, legal, finance</li>
+</ul>
+</div>
+<div class="tc an">
+<h3>Day 31 to 60</h3>
+<div class="tt">LAUNCH + ACTIVATE</div>
+<ul>
+<li>Onboarding + enablement program live</li>
+<li>Deal registration and scorecard systems operational</li>
+<li>First co-sell plays running with top partners</li>
+<li>Certification requirements enforced</li>
+<li>MDF allocation framework and approval workflow</li>
+<li>Weekly pipeline cadence with partners established</li>
+</ul>
+</div>
+<div class="tc an">
+<h3>Day 61 to 90</h3>
+<div class="tt">GOVERN + SCALE</div>
+<ul>
+<li>QBR cadence launched with structured agenda</li>
+<li>MDF/SPIF governance and ROI tracking live</li>
+<li>Forecast model for partner-sourced pipeline</li>
+<li>Partner tier review and graduation/remediation</li>
+<li>Scale recruitment to secondary target list</li>
+<li>Product marketing collaboration for new motions</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="diagnostic">
+<div class="ey">Channel Maturity Diagnostic</div>
+<h2>Is your channel a revenue engine or a logo program?</h2>
+<div class="dv"></div>
+<div class="qo">
+<p style="margin-bottom:26px">Score each area 1 to 5. Get your channel health score in 60 seconds.</p>
+<div class="qi"><div class="ql">1. Do you have a documented partner program (tiers, margins, deal registration)?</div><div class="qp" data-q="0"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Informal</small></div><div class="qv" data-v="3">3<small>Partial</small></div><div class="qv" data-v="4">4<small>Documented</small></div><div class="qv" data-v="5">5<small>Optimized</small></div></div></div>
+<div class="qi"><div class="ql">2. Do you have a scored ideal partner profile with active recruitment?</div><div class="qp" data-q="1"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Ad hoc</small></div><div class="qv" data-v="3">3<small>Criteria</small></div><div class="qv" data-v="4">4<small>Scored</small></div><div class="qv" data-v="5">5<small>Systematic</small></div></div></div>
+<div class="qi"><div class="ql">3. Do partners have battlecards, training, and demo access?</div><div class="qp" data-q="2"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Portal</small></div><div class="qv" data-v="3">3<small>Basic</small></div><div class="qv" data-v="4">4<small>Full kit</small></div><div class="qv" data-v="5">5<small>Updated</small></div></div></div>
+<div class="qi"><div class="ql">4. Do you run active co-sell plays with defined pipeline targets?</div><div class="qp" data-q="3"><div class="qv" data-v="1">1<small>Never</small></div><div class="qv" data-v="2">2<small>Rare</small></div><div class="qv" data-v="3">3<small>Some</small></div><div class="qv" data-v="4">4<small>Regular</small></div><div class="qv" data-v="5">5<small>Weekly</small></div></div></div>
+<div class="qi"><div class="ql">5. Do you have partner scorecards and run QBRs?</div><div class="qp" data-q="4"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Annual</small></div><div class="qv" data-v="3">3<small>Quarterly</small></div><div class="qv" data-v="4">4<small>Scorecards</small></div><div class="qv" data-v="5">5<small>Data-driven</small></div></div></div>
+<div class="qi"><div class="ql">6. Can you forecast partner-sourced pipeline with confidence?</div><div class="qp" data-q="5"><div class="qv" data-v="1">1<small>None</small></div><div class="qv" data-v="2">2<small>Guessing</small></div><div class="qv" data-v="3">3<small>Directional</small></div><div class="qv" data-v="4">4<small>Reliable</small></div><div class="qv" data-v="5">5<small>+/- 10%</small></div></div></div>
+<div class="qi"><div class="ql">7. What percentage of revenue is partner-sourced or partner-influenced?</div><div class="qp" data-q="6"><div class="qv" data-v="1">1<small>&lt;5%</small></div><div class="qv" data-v="2">2<small>5 to 15%</small></div><div class="qv" data-v="3">3<small>15 to 30%</small></div><div class="qv" data-v="4">4<small>30 to 50%</small></div><div class="qv" data-v="5">5<small>50%+</small></div></div></div>
+<div class="qi"><div class="ql">8. Do you have deal registration with conflict resolution?</div><div class="qp" data-q="7"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Informal</small></div><div class="qv" data-v="3">3<small>Basic</small></div><div class="qv" data-v="4">4<small>Portal+SLA</small></div><div class="qv" data-v="5">5<small>Enforced</small></div></div></div>
+<div class="qi"><div class="ql">9. Do partners have structured onboarding (30/60/90)?</div><div class="qp" data-q="8"><div class="qv" data-v="1">1<small>Nothing</small></div><div class="qv" data-v="2">2<small>Welcome</small></div><div class="qv" data-v="3">3<small>Training</small></div><div class="qv" data-v="4">4<small>30/60/90</small></div><div class="qv" data-v="5">5<small>Gated</small></div></div></div>
+<div class="qi"><div class="ql">10. Do you measure MDF ROI and pipeline per marketing dollar?</div><div class="qp" data-q="9"><div class="qv" data-v="1">1<small>No MDF</small></div><div class="qv" data-v="2">2<small>Spend only</small></div><div class="qv" data-v="3">3<small>Tracking</small></div><div class="qv" data-v="4">4<small>ROI</small></div><div class="qv" data-v="5">5<small>Optimized</small></div></div></div>
+<button class="qb" onclick="score()">Get My Channel Score &#8594;</button>
+<div id="qr">
+<div class="qs" id="sn">...</div>
+<h4 id="sl">...</h4>
+<p id="st">...</p>
+<a href="#contact" class="btn" style="margin-top:20px">Let's Talk &#8594;</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="ey">Credentials</div>
+<div class="dv" style="margin-top:0"></div>
+<div class="cr">
+<div>
+<div class="ci"><b>MBA, Cornell University</b><span>SC Johnson School of Management</span></div>
+<div class="ci"><b>BS, Computer Science, UC Berkeley</b><span>Technical credibility with engineering buyers and SEs</span></div>
+<div class="ci"><b>AI for Business Strategy, MIT Sloan</b><span>AI/ML positioning for enterprise adoption</span></div>
+<div class="ci"><b>C-level partner management and executive QBR leadership</b><span>VP/CIO/CISO-level engagement across vendor and partner organizations</span></div>
+<div class="ci"><b>Comfortable operating in SOC2-aligned environments</b><span>Privacy and security discipline in enterprise procurement contexts</span></div>
+</div>
+<div>
+<div class="ce">
+<span>PMP</span><span>CISSP</span><span>CSM</span><span>AWS Solutions Architect</span><span>CompTIA Security+</span><span>ITIL</span><span>ServiceNow CSA</span><span>Salesforce Admin</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="cs">
+<div class="ey">Contact</div>
+<h2>Let's build your channel.</h2>
+<p>First conversation is diagnostic. No pitch. I need to understand your product, your market, and where your channel is today before I tell you what I'd do.</p>
+<a href="mailto:ma897@cornell.edu" class="btn">Start a Conversation &#8594;</a>
+<div class="sk">Currently accepting 2 new engagements for Q2 2026.</div>
+<div class="cg">
+<div><b>Email</b><div class="v"><a href="mailto:ma897@cornell.edu">ma897@cornell.edu</a></div></div>
+<div><b>Phone</b><div class="v">516-641-1474</div></div>
+<div><b>Location</b><div class="v">Orlando, FL</div></div>
+<div><b>LinkedIn</b><div class="v"><a href="https://linkedin.com/in/mattamjad">linkedin.com/in/mattamjad</a></div></div>
+</div>
+</section>
+
+<footer>
+<span>&#169; 2026 Mateen Amjad</span>
+<span>Channel Director | Reseller / MSP / MSSP Revenue | Partner Governance</span>
+</footer>
+
+<script>
+var ob=new IntersectionObserver(function(e){e.forEach(function(el){if(el.isIntersecting)el.target.classList.add("v")})},{threshold:0.08});
+document.querySelectorAll(".an").forEach(function(el){ob.observe(el)});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});
+document.querySelectorAll(".qv").forEach(function(o){o.addEventListener("click",function(){this.parentElement.querySelectorAll(".qv").forEach(function(x){x.classList.remove("sel")});this.classList.add("sel")})});
+function score(){var t=0,c=0;document.querySelectorAll(".qp").forEach(function(g){var s=g.querySelector(".sel");if(s){t+=parseInt(s.dataset.v,10);c++}});if(c<10){alert("Please answer all 10 questions.");return}var p=Math.round((t/50)*100);document.getElementById("sn").textContent=p+"/100";var r=document.getElementById("qr");r.style.display="block";if(p<=25){document.getElementById("sl").textContent="Early Stage: No Channel Infrastructure";document.getElementById("st").textContent="You need a full channel build: partner profile, recruitment, enablement, and governance. This is exactly what I do in the first 90 days."}else if(p<=50){document.getElementById("sl").textContent="Foundation: Partners Exist, Pipeline Does Not";document.getElementById("st").textContent="You have partners on paper but they are not selling. The gap is enablement, co-sell plays, SPIFs, and accountability."}else if(p<=75){document.getElementById("sl").textContent="Growth: Channel Working, Not Optimized";document.getElementById("st").textContent="Your channel produces revenue but there is upside. Focus on governance, forecast accuracy, MDF ROI, and expanding co-sell plays to scale partner-sourced pipeline."}else{document.getElementById("sl").textContent="Mature: Channel Is a Revenue Engine";document.getElementById("st").textContent="Your channel is strong. I can help with national expansion, new partner segments (MSP/MSSP), or optimizing partner economics and attribution."}r.scrollIntoView({behavior:"smooth"})}
+</script>
+</body>
+</html>
